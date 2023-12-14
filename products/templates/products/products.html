@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block css %}
- <link rel="stylesheet" href="{% static 'css/style6.css' %}">
+ <link rel="stylesheet" href="{% static 'css/products.css' %}">
 {% endblock %}
 
 
@@ -12,7 +12,7 @@
        {% for product in products %}
          <div class="container">
             <div class="product">
-              <a href="/tovar6.html" class="image">
+              <a href="#" class="image">
 
                   {% if product.image %}
     <p><img
@@ -28,6 +28,9 @@
                <p>{{ product.author }}</p>
                <h1>{{ product.price }}&#8381</h1>
             </a>
+                <div class="card-footer text-start">
+                    <a class="btn btn-outline-success" href="{% url 'products:basket_add' product.id %}">В корзину</a>
+                </div>
           </div>
         </div>
        {% endfor %}
