@@ -4,7 +4,7 @@
 
 Пропишите команду:
 
-git clone "https://github.com/DariaTishina/CharmyStitchesDjango"
+git clone "https://github.com/KasyanovaYlia/book"
 
 Таким образом, вы скопируете все файлы репозитория к себе.
 
